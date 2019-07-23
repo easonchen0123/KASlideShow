@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name     = 'KASlideShow'
   s.version  = '3.0.0'
-  s.platform = :ios
+  s.platform = :ios, '9.0'
   s.license  = {:type =>'MIT', :file =>'LICENSE'}
   s.summary  = 'Slideshow with fade and slide transitions.'
   s.homepage = 'https://github.com/kirualex/KASlideShow'
