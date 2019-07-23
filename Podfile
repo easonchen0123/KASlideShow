@@ -4,6 +4,6 @@ inhibit_all_warnings!
 
 target 'KASlideShow' do
 
-    pod 'SDWebImage', '~> 3.8'
+    pod 'SDWebImage', '~> 4.4.2'
 
 end
