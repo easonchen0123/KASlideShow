@@ -394,13 +394,16 @@
 
 - (void)handleSingleTap:(id)sender
 {
-    UITapGestureRecognizer *gesture = (UITapGestureRecognizer *)sender;
-    CGPoint pointTouched = [gesture locationInView:self.topImageView];
-
-    if (pointTouched.x <= self.topImageView.center.x){
-        [self previous];
-    }else {
-        [self next];
+//    UITapGestureRecognizer *gesture = (UITapGestureRecognizer *)sender;
+//    CGPoint pointTouched = [gesture locationInView:self.topImageView];
+//
+//    if (pointTouched.x <= self.topImageView.center.x){
+//        [self previous];
+//    }else {
+//        [self next];
+//    }
+    if ([self.delegate respondsToSelector:@selector(slideShowDidTap:)]) {
+        [self.delegate slideShowDidTap:self];
     }
 }
 
