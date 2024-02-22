@@ -16,5 +16,5 @@ Support local and remote images.'
   s.requires_arc =  true
   s.framework = 'Foundation'
 
-  s.dependency 'SDWebImage', '~> 4.4.2'
+  s.dependency 'SDWebImage', '~> 5.9.5'
 end
